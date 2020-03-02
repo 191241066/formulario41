@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> .:Recomendación de la Realidad :. </title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+
+<body>
+    <main>
+        <h1 class="abc">Recomendación de la realidad</h1>
+        <br><input type="button" onclick="alert('debes escojer entre dos caminos ')" value="click para mas informacion" />
+        <h3 class="ac">
+            <h1>¿quieres salir de la matrix?</h1> <br>
+            <h2>1-Si <br> 2- No</h2>
+        </h3>
+        <p>
+
+            <input id="pais" type="number" min="0" max="3" required>
+            <label for="pas"></label>
+        </p>
+
+
+
+        <h3 class="ac">
+            <h1>Escoje una pildora </h1> <br>
+            <h2>1-Roja <br> 2- Azul </h2>
+        </h3>
+        <form action="javascript:cod();">
+            <p>
+                <input id="juego" type="number" min="0" max="3" required>
+                <label for="genero"></label>
+            </p>
+            <p><button id="submit">
+                    <h1>Recomendación</h1>
+                </button></p>
+        </form>
+        <script>
+            function cod() {
+                const jue = juego.valueAsNumber;
+                const pai = pais.valueAsNumber;
+
+                switch (pai) {
+                    case 1:
+                        var nac = "saliendo de  la matrix al mundo real.........";
+                        break;
+                    case 2:
+                        var nac = "olvidaras todo y te quedaras en la matrix";
+                        break;
+                  
+                }
+
+                switch (jue) {
+                    case 1:
+                        alert("escojiste la pildora roja \n " + nac);
+                        break;
+                    case 2:
+                        alert("escojiste la pildora azul  \n " + nac);
+                        break;
+                   
+                }
+
+
+
+            }
+        </script>
+    </main>
+    <footer>Ramírez Toala Mario IC-41M</footer>
+</body>
+
+</html>
